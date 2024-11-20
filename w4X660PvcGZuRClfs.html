@@ -1,0 +1,544 @@
+<html><head><base href="." />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Homologación de Títulos en Alemania - Guía Práctica</title>
+<style>
+    :root {
+        --primary: #1e3d8f;
+        --secondary: #e4e8f5;
+        --accent: #ffd700;
+        --text: #333;
+    }
+    
+    body {
+        font-family: 'Open Sans', sans-serif;
+        margin: 0;
+        padding: 0;
+        color: var(--text);
+        line-height: 1.6;
+    }
+
+    header {
+        background: var(--primary);
+        color: white;
+        padding: 2rem;
+        text-align: center;
+    }
+
+    nav {
+        background: var(--secondary);
+        padding: 1rem;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+    }
+
+    nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    nav a {
+        color: var(--primary);
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 2rem;
+    }
+
+    .process-card {
+        background: white;
+        border-radius: 8px;
+        padding: 1.5rem;
+        margin-bottom: 1.5rem;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        transition: transform 0.3s ease;
+    }
+
+    .process-card:hover {
+        transform: translateY(-5px);
+    }
+
+    .step-number {
+        background: var(--primary);
+        color: white;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 1rem;
+    }
+
+    .important-note {
+        background: var(--accent);
+        padding: 1rem;
+        border-radius: 4px;
+        margin: 1rem 0;
+    }
+
+    footer {
+        background: var(--primary);
+        color: white;
+        text-align: center;
+        padding: 1rem;
+        margin-top: 2rem;
+    }
+
+    .doc-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 20px 0;
+    }
+
+    .doc-table th, .doc-table td {
+        border: 1px solid #ddd;
+        padding: 12px;
+        text-align: left;
+    }
+
+    .doc-table th {
+        background-color: var(--primary);
+        color: white;
+    }
+
+    .doc-table tr:nth-child(even) {
+        background-color: var(--secondary);
+    }
+
+    .doc-section {
+        margin-bottom: 30px;
+    }
+
+    .doc-section h3 {
+        color: var(--primary);
+        border-bottom: 2px solid var(--accent);
+        padding-bottom: 10px;
+    }
+
+    #homologationFinder .question {
+        margin-bottom: 2rem;
+        padding: 1rem;
+        background: var(--secondary);
+        border-radius: 8px;
+    }
+
+    #homologationFinder select, 
+    #homologationFinder input[type="radio"] {
+        margin: 0.5rem 0;
+    }
+
+    #homologationFinder label {
+        display: block;
+        margin: 0.5rem 0;
+    }
+
+    .submit-btn {
+        background: var(--primary);
+        color: white;
+        border: none;
+        padding: 1rem 2rem;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 1.1rem;
+        margin-top: 1rem;
+    }
+
+    .submit-btn:hover {
+        background: #152c6a;
+    }
+
+    .results-section {
+        margin-top: 2rem;
+        padding: 1rem;
+        background: var(--secondary);
+        border-radius: 8px;
+    }
+
+    #resultsContent {
+        margin-top: 1rem;
+    }
+
+    @media (max-width: 768px) {
+        nav ul {
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+        }
+        .doc-table {
+            font-size: 14px;
+        }
+        .doc-table th, .doc-table td {
+            padding: 8px;
+        }
+    }
+</style>
+</head>
+<body>
+    <header>
+        <h1>Homologación de Títulos Profesionales en Alemania</h1>
+        <p>Guía completa para el reconocimiento de cualificaciones extranjeras</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#proceso">Proceso</a></li>
+            <li><a href="#documentos">Documentos</a></li>
+            <li><a href="#costos">Costos</a></li>
+            <li><a href="#recursos">Recursos</a></li>
+            <li><a href="#finder">Finder de Homologación</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <section id="documentos" class="doc-section">
+            <h2>Documentos para la Solicitud</h2>
+            
+            <div class="important-note">
+                <strong>¡Importante!</strong>
+                <p>Los documentos necesarios dependerán de:</p>
+                <ul>
+                    <li>Tu cualificación profesional</li>
+                    <li>Tu país de origen</li>
+                    <li>Dónde obtuviste tu cualificación</li>
+                    <li>Dónde deseas trabajar en Alemania</li>
+                </ul>
+            </div>
+
+            <h3>Documentos Siempre Necesarios</h3>
+            <table class="doc-table">
+                <tr>
+                    <th>Documento</th>
+                    <th>Traducción al alemán</th>
+                    <th>Notas</th>
+                </tr>
+                <tr>
+                    <td>Solicitud</td>
+                    <td>Formulario alemán</td>
+                    <td>Formulario específico proporcionado por la autoridad competente</td>
+                </tr>
+                <tr>
+                    <td>Identificación</td>
+                    <td>No necesaria</td>
+                    <td>Pasaporte o DNI válido</td>
+                </tr>
+                <tr>
+                    <td>Certificado de cualificación profesional</td>
+                    <td>Sí</td>
+                    <td>Título universitario, diploma o certificado de estudios</td>
+                </tr>
+                <tr>
+                    <td>Pruebas de contenido y duración</td>
+                    <td>Sí</td>
+                    <td>Expediente académico, lista de asignaturas, suplemento al título</td>
+                </tr>
+            </table>
+
+            <h3>Documentos Generalmente Necesarios</h3>
+            <table class="doc-table">
+                <tr>
+                    <th>Documento</th>
+                    <th>Traducción al alemán</th>
+                    <th>Notas</th>
+                </tr>
+                <tr>
+                    <td>Curriculum Vitae</td>
+                    <td>En alemán</td>
+                    <td>Formato tabular con formación y experiencia</td>
+                </tr>
+                <tr>
+                    <td>Experiencia laboral</td>
+                    <td>Sí</td>
+                    <td>Certificados laborales y referencias</td>
+                </tr>
+                <tr>
+                    <td>Certificados adicionales</td>
+                    <td>Sí</td>
+                    <td>Formaciones complementarias y especializaciones</td>
+                </tr>
+            </table>
+
+            <div class="important-note">
+                <strong>Consideraciones importantes:</strong>
+                <ul>
+                    <li>Todos los documentos deben presentarse en copias certificadas</li>
+                    <li>Las traducciones deben ser realizadas por traductores jurados</li>
+                    <li>No enviar documentos originales</li>
+                    <li>Consultar requisitos específicos con la autoridad competente</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="costos">
+            <h2>Costos Aproximados</h2>
+            <div class="process-card">
+                <p>El proceso de homologación puede costar entre 100€ y 600€, dependiendo de:</p>
+                <ul>
+                    <li>Tipo de profesión</li>
+                    <li>Estado federal</li>
+                    <li>Complejidad del proceso</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="recursos">
+            <h2>Enlaces Útiles</h2>
+            <div class="process-card">
+                <ul>
+                    <li><a href="https://www.anerkennung-in-deutschland.de/es">Portal oficial de reconocimiento</a></li>
+                    <li><a href="https://www.make-it-in-germany.com/es/">Make it in Germany</a></li>
+                    <li><a href="https://www.kmk.org/themen/anerkennung-auslaendischer-abschluesse.html">Conferencia Permanente de Ministros de Educación y Cultura</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="finder" class="doc-section">
+            <h2>Finder de Homologación</h2>
+            <div class="process-card" id="questionnaireCard">
+                <form id="homologationFinder">
+                    <div class="question" id="q1">
+                        <h3>¿Cuál es tu profesión?</h3>
+                        <select name="profession" required>
+                            <option value="">Selecciona una profesión</option>
+                            <!-- Profesiones reguladas -->
+                            <option value="medico_general">Médico general</option>
+                            <option value="medico_especialista">Médico especialista</option>
+                            <option value="enfermero">Enfermero/a titulado</option>
+                            <option value="farmaceutico">Farmacéutico/a</option>
+                            <option value="fisioterapeuta">Fisioterapeuta</option>
+                            <option value="audiologo">Audiólogo/a y terapeuta del habla</option>
+                            <option value="nutricionista">Nutricionista y dietista</option>
+                            <option value="veterinario">Veterinario/a</option>
+                            <option value="dentista">Cirujano/a dental</option>
+                            <option value="optometrista">Especialista en optometría y ortóptica</option>
+                            <option value="ing_civil">Ingeniero/a civil</option>
+                            <option value="ing_mecanico">Ingeniero/a mecánico</option>
+                            <option value="ing_electrico">Ingeniero/a eléctrico</option>
+                            <option value="ing_telecom">Ingeniero/a en telecomunicaciones</option>
+                            <option value="ing_metalurgico">Ingeniero/a metalúrgico y en minería</option>
+                            <option value="ing_quimico">Ingeniero/a químico</option>
+                            <option value="ing_ambiental">Ingeniero/a ambiental</option>
+                            <option value="prof_especial">Docente en educación especial</option>
+                            <option value="prof_primaria">Docente en educación primaria y preescolar</option>
+                            <option value="prof_secundaria">Docente en secundaria</option>
+                            <option value="prof_universidad">Docente universitario y educación superior</option>
+                            <!-- Profesiones no reguladas (mantener las existentes) -->
+                            <option value="disenador">Diseñador gráfico</option>
+                            <option value="desarrollador">Desarrollador de software</option>
+                            <option value="fotografo">Fotógrafo</option>
+                            <option value="periodista">Periodista</option>
+                            <option value="traductor">Traductor</option>
+                            <option value="marketing">Marketing Digital</option>
+                            <option value="consultor_ti">Consultor de TI</option>
+                            <option value="community">Community Manager</option>
+                            <option value="escritor">Escritor</option>
+                            <option value="chef_libre">Chef (sin regulación específica)</option>
+                            <option value="coach">Coach</option>
+                            <option value="ventas">Trabajador en ventas y gestión de proyectos</option>
+                        </select>
+                    </div>
+
+                    <div class="question" id="q2">
+                        <h3>¿Tiene la nacionalidad de un país de la UE, Noruega, Islandia, Liechtenstein o Suiza?</h3>
+                        <label><input type="radio" name="eu_citizenship" value="yes" required> Sí</label>
+                        <label><input type="radio" name="eu_citizenship" value="no"> No</label>
+                    </div>
+
+                    <div class="question" id="q3">
+                        <h3>¿En qué estado federal de Alemania vive o tiene planeado vivir?</h3>
+                        <select name="federal_state" required>
+                            <option value="">Seleccione un estado</option>
+                            <option value="baden">Baden-Württemberg</option>
+                            <option value="bavaria">Baviera</option>
+                            <option value="berlin">Berlín</option>
+                            <option value="brandenburg">Brandeburgo</option>
+                            <option value="bremen">Bremen</option>
+                            <option value="hamburg">Hamburgo</option>
+                            <option value="hessen">Hessen</option>
+                            <option value="mecklenburg">Mecklemburgo-Pomerania Occidental</option>
+                            <option value="niedersachsen">Baja Sajonia</option>
+                            <option value="nrw">Renania del Norte-Westfalia</option>
+                            <option value="rheinland">Renania-Palatinado</option>
+                            <option value="saarland">Sarre</option>
+                            <option value="sachsen">Sajonia</option>
+                            <option value="sachsen_anhalt">Sajonia-Anhalt</option>
+                            <option value="schleswig">Schleswig-Holstein</option>
+                            <option value="thuringen">Turingia</option>
+                        </select>
+                    </div>
+
+                    <div class="question" id="q4">
+                        <h3>¿Dónde ha completado su formación o estudios?</h3>
+                        <label><input type="radio" name="education_location" value="eu" required> En la UE, Noruega, Islandia, Liechtenstein o Suiza</label>
+                        <label><input type="radio" name="education_location" value="other"> En otro país</label>
+                    </div>
+
+                    <div class="question" id="q5">
+                        <h3>¿Ya vive en Alemania?</h3>
+                        <label><input type="radio" name="lives_in_germany" value="yes" required> Sí</label>
+                        <label><input type="radio" name="lives_in_germany" value="no"> No</label>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Obtener Resultados</button>
+                </form>
+
+                <div id="results" style="display: none;" class="results-section">
+                    <h3>Resultados de su consulta</h3>
+                    <div id="resultsContent"></div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>© 2024 Guía de Homologación de Títulos en Alemania</p>
+        <p>Información actualizada - Consulta siempre las fuentes oficiales</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetSection = document.querySelector(targetId);
+                targetSection.scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        window.addEventListener('scroll', () => {
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('nav a');
+            
+            let currentSection = '';
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                if (window.pageYOffset >= sectionTop - 60) {
+                    currentSection = '#' + section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.style.color = link.getAttribute('href') === currentSection 
+                    ? '#ffd700' 
+                    : '#1e3d8f';
+            });
+        });
+
+        document.getElementById('homologationFinder').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const formData = new FormData(this);
+            const profession = formData.get('profession');
+            const isEU = formData.get('eu_citizenship') === 'yes';
+            const federalState = formData.get('federal_state');
+            const educationLocation = formData.get('education_location');
+            const livesInGermany = formData.get('lives_in_germany');
+
+            let resultText = `<h4>Información sobre el proceso de homologación:</h4>`;
+
+            // Engineering professions array
+            const engineeringProfessions = [
+                'ing_civil',
+                'ing_mecanico',
+                'ing_electrico',
+                'ing_telecom',
+                'ing_metalurgico',
+                'ing_quimico',
+                'ing_ambiental'
+            ];
+
+            // Rest of regulated professions
+            const otherRegulatedProfessions = [
+                'medico_general',
+                'medico_especialista',
+                'enfermero',
+                'farmaceutico',
+                'fisioterapeuta',
+                'audiologo',
+                'nutricionista',
+                'veterinario',
+                'dentista',
+                'optometrista',
+                'prof_especial',
+                'prof_primaria',
+                'prof_secundaria',
+                'prof_universidad'
+            ];
+
+            // Non-regulated professions remain the same
+            const nonRegulatedProfessions = ['disenador', 'desarrollador', 'fotografo', 'periodista', 'traductor', 'marketing', 'consultor_ti', 'community', 'escritor', 'chef_libre', 'coach', 'ventas'];
+
+            if (engineeringProfessions.includes(profession)) {
+                resultText += `<p><strong>Su profesión requiere homologación obligatoria en Alemania.</strong></p>
+                <div class="important-note">
+                    <h4>Información Detallada para Ingenieros:</h4>
+                    <h5>Resumen del proceso de homologación para ingenieros en Baden-Württemberg</h5>
+                    <p>La Ingenieurkammer Baden-Württemberg (INGBW) es la entidad encargada de autorizar el uso del título profesional "Ingenieur/in" a quienes poseen un título extranjero relacionado. Este proceso es regulado por el Ingenieurgesetz (IngG) y está diseñado para validar las cualificaciones de ingenieros formados fuera de Alemania.</p>
+
+                    <h5>Puntos clave del proceso</h5>
+                    <h6>Autorización y restricciones:</h6>
+                    <ul>
+                        <li>La autorización permite usar el título "Ingenieur/in", pero no convierte el título extranjero en el grado académico alemán "Diplom-Ingenieur/in".</li>
+                        <li>Es obligatorio contar con esta autorización para usar el título profesional en Alemania; el uso indebido puede sancionarse con multas de hasta 25,000 EUR.</li>
+                    </ul>
+
+                    <h6>Requisitos de solicitud:</h6>
+                    <ul>
+                        <li>Formulario de solicitud completo.</li>
+                        <li>Pruebas de nacionalidad: Copia del pasaporte o documento de identidad, y si aplica, el permiso de residencia.</li>
+                        <li>Comprobante de residencia según corresponda.</li>
+                        <li>Documentación académica completa con traducciones certificadas.</li>
+                    </ul>
+
+                    <h6>Costos del trámite:</h6>
+                    <ul>
+                        <li>La tarifa estándar es de 360 EUR.</li>
+                        <li>En casos complejos, las tarifas pueden aumentar hasta un máximo de 2,100 EUR.</li>
+                    </ul>
+                </div>`;
+            } else if (otherRegulatedProfessions.includes(profession)) {
+                resultText += `<p><strong>Su profesión requiere homologación obligatoria en Alemania.</strong></p>
+                              <p>Pasos a seguir:</p>
+                              <ol>
+                                  <li>Contactar a la autoridad competente en ${formData.get('federal_state')}</li>
+                                  <li>Preparar todos los documentos necesarios con sus respectivas traducciones juradas</li>
+                                  <li>Presentar la solicitud de homologación</li>
+                                  <li>Esperar la evaluación de equivalencia</li>
+                              </ol>`;
+            } else if (nonRegulatedProfessions.includes(profession)) {
+                resultText += `<p><strong>¡Buenas noticias!</strong> Su profesión no requiere homologación obligatoria en Alemania.</p>
+                              <p>Sin embargo, tenga en cuenta que:</p>
+                              <ul>
+                                  <li>Algunos empleadores pueden solicitar una evaluación voluntaria de sus cualificaciones</li>
+                                  <li>Es recomendable tener sus documentos traducidos al alemán</li>
+                                  <li>Un buen nivel de alemán puede ser necesario según el empleador</li>
+                              </ul>`;
+            }
+
+            if (!isEU) {
+                resultText += `<p><strong>Nota importante:</strong> Como ciudadano de un país no perteneciente a la UE/EEE, 
+                              necesitará además gestionar los permisos de residencia y trabajo correspondientes.</p>`;
+            }
+
+            // Mostrar los resultados
+            document.getElementById('results').style.display = 'block';
+            document.getElementById('resultsContent').innerHTML = resultText;
+            
+            // Scroll to results
+            document.getElementById('results').scrollIntoView({ behavior: 'smooth' });
+        });
+    </script>
+</body>
+</html>
